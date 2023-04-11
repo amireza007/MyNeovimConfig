@@ -1,2 +1,2 @@
 # MyNeovimConfig
-My Neovim config and installed plugins (init.vim)
+My Neovim config (init.vim) and installed plugins (coc-settings.json)
