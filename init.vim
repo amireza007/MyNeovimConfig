@@ -1,3 +1,4 @@
+"lua require('dap-go').setup()
 source $HOME/.config/nvim/plug-config/coc.vim
 "My personal config starts from here:
 source $HOME/.config/nvim/plug-config/treesitter.vim
@@ -85,6 +86,8 @@ set fileformat=unix
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'tomasr/molokai'
 Plug 'vim-test/vim-test'
@@ -97,12 +100,19 @@ Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
 "Plug 'tweekmonster/braceless.vim'
 Plug 'preservim/nerdcommenter'
+Plug 'mfussenegger/nvim-dap'
+Plug 'rcarriga/nvim-dap-ui'
+Plug 'leoluz/nvim-dap-go'
 Plug 'morhetz/gruvbox'
 "Plug 'jiangmiao/auto-pairs'
 "Plug 'davidhalter/jedi-vim'
 "Plug 'zchee/deoplete-jedi'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
+"telescope
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.4' }
+" or                                , { 'branch': '0.1.x' }
 "Plug 'nathanaelkane/vim-indent-guides'
 "if has('nvim')
   "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
